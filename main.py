@@ -5,6 +5,7 @@ from pdfminer.pdfinterp import PDFPageInterpreter
 from pdfminer.pdfinterp import PDFResourceManager
 from pdfminer.pdfpage import PDFPage
 
+
 def extract_text_from_pdf(pdf_path):
     resource_manager = PDFResourceManager()
     fake_file_handle = io.StringIO()
@@ -25,6 +26,7 @@ def extract_text_from_pdf(pdf_path):
 
     if text:
         return text
+
 
 if __name__ == '__main__':
     print(extract_text_from_pdf('Annex_3_QSTECH.pdf'))
